@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form elements</title>
+</head>
+<body>
+    <h1>From Elements</h1>
+    <strong> lable </strong>
+
+    <label for="username"> User Name :</label>
+    <hr> 
+    <br>
+    <strong>input</strong>
+    <br>
+    <label for="firstname">First Name :</label>
+    <input type="text" placeholder="enter your first name" maxlength="5">
+  <h4> input numbers </h4>
+    <label for="Age">Age :</label>
+    <input type="number" value="21" >
+<br><br>
+    <strong>text area </strong>
+
+    <br> <br>
+    <textarea name="msg " id="msg" placeholder="enter your msg" rows="5" cols="30"></textarea>
+
+    <br><br>
+    <strong>buttons</strong>
+    <br><br>
+    <button type="button" onclick="alert('hello avi!')"> btn/save </button>
+    <button type="submit"> sub/save </button>
+    <button type="reset"> reset/save </button>
+<br> <br>
+    <label for="age"> age</label>
+    <input type="password" name="age" id="age">
+
+    <label for="date">date</label>
+    <input type="date" name="date" id="date">
+
+    <strong>radio button</strong>
+    <br>
+    <br>
+    <label for="female">female</label>
+    <input type="radio" name="gender" />
+    <label for="male">male</label>
+    <input type="radio" name="gender"/>
+
+<br>
+<strong>check box</strong>
+<br>
+<label for="remember">remember</label>
+<input type="checkbox" name="remember" >
+
+<br>
+<strong>file upload</strong>
+<br>
+<input type="file" name="file" >
+<br>
+<strong>select </strong>
+<br>
+<select name="technology" id="tech">
+<option value="java">java</option>
+<option value="javaScript">javaScript</option>
+</select>
+<br>
+<strong>field set and legend</strong>
+<br> <br>
+<fieldset>
+
+    <legend>Personal Information</legend>
+    <label for="firstname">First Name :</label>
+    <input type="text" >
+    <label for="lastname">last Name :</label>
+    <input type="text">
+
+</fieldset>
+<br> <br>
+
+<strong> form</strong>
+<br> <br>
+<form action="/pages/index.html" method="post">
+    <label for="firstname">First Name :</label>
+    <input type="text" name="name" required/>
+    <button  type="submit">submit</button>
+</form>
+
+
+
+</body>
+</html>

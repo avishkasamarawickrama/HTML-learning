@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid rgb(197, 46, 46);
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        table {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Tables</h1>
+
+    <!-- Simple Table Structure -->
+    <strong>1. Simple Table Structure</strong><br><br>
+    <table>
+        <caption>Basic Information Table</caption>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Avishka</td>
+                <td>Sama</td>
+                <td>21</td>
+                <td>0583 598</td>
+            </tr>
+            <tr>
+                <td>Samanthi</td>
+                <td>Franc</td>
+                <td>24</td>
+                <td>305 5804</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Summary 1</td>
+                <td>Summary 2</td>
+                <td>Summary 3</td>
+                <td>Summary 4</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Table with Colspan -->
+    <strong>2. Table with Colspan</strong><br><br>
+    <table style="width: 400px; text-align: center; font-size: 30px;">
+        <caption>Table with Colspan Example</caption>
+        <tbody>
+            <tr style="height: 100px;">
+                <td colspan="2">1</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr style="height: 100px;">
+                <td>5</td>
+                <td colspan="2">6</td>
+                <td>8</td>
+            </tr>
+            <tr style="height: 100px;">
+                <td>9</td>
+                <td colspan="3">10</td>
+            </tr>
+            <tr style="height: 100px;">
+                <td colspan="4">13</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Rowspan Example -->
+    <strong>3. Table with Rowspan</strong><br><br>
+    <table style="width: 400px; text-align: center; font-size: 30px;">
+        <caption>Table with Rowspan Example</caption>
+        <tbody>
+            <tr style="height: 100px;">
+                <td rowspan="2">1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr style="height: 100px;">
+                <td>6</td>
+                <td>7</td>
+                <td rowspan="3">8</td>
+            </tr>
+            <tr style="height: 100px;">
+                <td>9</td>
+                <td rowspan="2">10</td>
+                <td>11</td>
+            </tr>
+            <tr style="height: 100px;">
+                <td>13</td>
+                <td>15</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

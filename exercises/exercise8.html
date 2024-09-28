@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise  8</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+
+        .header{
+            height: 80px;
+            width: 100%;
+            border: 1px solid black;
+            position: fixed;
+            background-color: darkgrey;
+
+
+        }
+      header img{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin: 10px;
+        }
+
+        h2{
+            position: absolute;
+            top: 5px;
+            left:  90px;
+        }
+
+        .tags{
+            position: fixed;
+            top: 10px;
+            left: 350px;
+            
+        }
+   
+        nav {
+ 
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 27px;
+            margin-left: 150px;
+
+        }
+        
+        nav a{
+            text-decoration: none;
+            padding: 8px 16px;
+            font-weight: 200;
+            
+
+        }
+
+        .section1{
+            height: 100vh;
+            width: 50%;
+            background-color: bisque;
+            border: 1px solid black;
+           
+            
+        }
+
+        h3{
+            position: relative;
+            top: 160px;
+            left: 110px;
+        }
+
+        p{
+         position: relative;
+          top: 182px;
+          left: 50px;
+          padding-right: 190px;
+          padding-left: 60px;
+        text-align: justify;
+        }
+
+        .info{
+               background-color: aquamarine;
+               position: relative;
+               top: 200px;
+               left: 100px;
+               width: 280px;
+               padding-right: 190px;
+               padding-left: 60px;
+           
+
+        }
+
+        .icon{
+            height: 20px;
+            width: 20px ;
+            position: absolute;
+            left: 100px;
+            top: 520px;
+            display: flex;
+            flex-direction: row;
+            
+        }
+
+        .section2{
+                 width: 50%;
+                 height: 100vh;
+                 
+                 
+
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+               
+              <img src="/images/me.jpg" alt="me">
+              <h2> Avishka Samarawickrama</h2>
+              <div class="tags">
+
+               
+                 <nav>
+                    <a href="|">Home</a>
+                    <a href="">About</a>
+                    <a  href="">Service</a>
+                    <a href="">Contact</a>
+      
+              </nav> 
+              </div>
+               
+    </header>
+
+   <div class="section1">
+      
+    <h3>
+        Hey there,  <br> You are in my porfolio
+    </h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit dolores ipsam autem eveniet cumque, repellendus a! Consectetur, eaque corporis?
+
+    </p>
+
+    <button class="info">
+                More Info
+    </button>
+
+    <div class="icon">
+
+        <div>
+        <a href="https://facebook.com" target="_blank" aria-label="fb">
+            <img src="/images/facebook.png" alt="fb">
+        </a>
+    </div>
+        <div>
+            <a href="https://linkedin.com" target="_blank" aria-label="linkedin">
+                <img src="/images/linkedln.png" alt="linkedin">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://github.com" target="_blank" aria-label="github" >
+                <img src="/images/github.jpg" style="height: 40px; width: 40px; gap: 10px;"  alt="fb">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://youtube.com" target="_blank" aria-label="yt">
+                <img src="/images/you tube.png" alt="yt">
+            </a>
+        </div>
+    </div>
+   </div>
+
+
+   <div class="section2">
+     
+    <img src="/images/lib.jpg" alt="me">
+
+   </div>
+
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Content</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1,
+    h4 {
+      color: darkblue;
+    }
+
+    img,
+    video,
+    iframe {
+      margin: 10px 0;
+    }
+
+    /* Responsive images and media */
+    img,
+    video {
+      max-width: 100%;
+      height: auto;
+    }
+
+    iframe {
+      max-width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Media Content</h1>
+
+  <!-- Image Section -->
+  <h4>Images</h4>
+  <img src="/images/IMG_1714144016322.jpg" style="object-fit:cover" alt="Panadura beach">
+
+  <img src="https://th.bing.com/th/id/OIP.Vtxy0FjT_EfudI4cQk1kzAHaE8?rs=1&pid=ImgDetMain" style="object-fit:cover"
+    alt="Red flower image">
+
+  <img src="https://th.bing.com/th/id/OIP.YJOVwl6RMY9mBFunapLtIAHaEK?w=305&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+    style="object-fit:cover" alt="Kapuru image">
+
+  <img src="https://th.bing.com/th/id/OIP.fcroxNbQ9e8t39YowzKPggHaEo?w=210&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+    style="object-fit:cover" alt="Yellow flower image">
+
+  <!-- Video Section -->
+  <h4>Videos</h4>
+
+  <strong>Internal Video</strong> <br>
+  <video src="/videos/newzealand.mp4" style="object-fit:cover" controls>
+    Your browser does not support the video tag.
+  </video>
+
+  <br><strong>External Video</strong> <br>
+  <video src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+    style="object-fit:cover" controls>
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Audio Section -->
+  <h4>Audio</h4>
+  <audio src="/audio/Sililara Sitha Nayana HipHop Remix SLMIX.mp3" controls>
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Iframe Section -->
+  <h4>Iframe</h4>
+  <strong>YouTube Video</strong><br>
+  <iframe src="https://www.youtube.com/embed/lTxn2BuqyzU" style="object-fit:cover" frameborder="0"
+    allowfullscreen></iframe>
+
+  <br><strong>Embedded Website</strong><br>
+  <iframe src="https://ijse.lk" style="object-fit:cover" frameborder="0"></iframe>
+
+</body>
+
+</html>

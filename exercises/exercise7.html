@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 7</title>
+    <style>
+        body{
+            background-color: lightgoldenrodyellow;
+            margin: 0;
+        }
+        .box{
+
+          width: 200px;
+          height: 200px;
+          background-color: lightskyblue;
+          border: 1px solid black;
+
+        }
+
+        .box1{
+         position: absolute;
+         top: 0;
+         left: 0;
+         border-radius: 0  0 200px 0;
+        }
+
+         .box2{
+         position: absolute;
+         right: 0;
+         top: 0;
+         border-radius: 0  0  0  200px;
+        }
+        .box3{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            border-radius: 0   200px 0 0;
+        }
+         .box4{
+             position: absolute;
+            right: 0;
+            bottom: 0;
+            border-radius:  200px 0 0 0;
+        }
+
+        .box5{
+            position: absolute;
+            top: 400px;
+            left: 800px;
+            bottom: 400px;
+            right: 800px;
+            /* top: 50%;
+            left: 50%; 
+            transform:translate: (-50% , -50%);*/
+            background-color: red;
+        }
+
+        .box6{
+            background-color: white;
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            bottom: 40px;
+            right: 40px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class=" box box1"></div>
+        <div class="box box2"></div>
+        <div class=" box box3"></div>
+        <div class="box box4"></div>
+     </div>
+    <div class="box box5">
+        <div class="box box6"></div>
+    </div>
+</body>
+</html>

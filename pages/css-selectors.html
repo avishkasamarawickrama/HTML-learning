@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors </title>
+    <style>
+        h2{
+         color: blue;
+        }
+        .text{
+            color: darkorange;
+        }
+        #main-paragraph{
+             color: darkgreen;
+        }
+        a[target="_balnk"]{
+            color: crimson;
+        }
+
+        div p{
+            font-style: italic;
+        }
+        
+        ul > li {
+            font-family: fantasy;
+            /* list-style-type: square; */
+        }
+        h2 + p{
+            color: fuchsia;
+        }
+
+        h1 ~p {
+            color: aqua;
+        }
+        li:first-child{
+            color: rgb(152, 134, 3);
+        }
+        li:last-child{
+            color: mediumslateblue;
+        }
+        li:nth-child(3){
+            color: lightcoral;
+        }
+        li:nth-child(odd){
+            color: rgb(183, 194, 26);
+        }
+
+        p:hover{
+            color: blue;
+        }
+
+        p::first-letter{
+            font-size: 20px;
+        }
+
+        p::first-line{
+            color: darkcyan;
+        }
+
+        p::before{
+            content: "before  ";
+            color: rgb(93, 63, 26);
+        }
+
+        p::after{
+
+            content: "  bye ";
+            color: crimson;
+        }
+        h1,h2,h3{
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+
+    ====== 01. element selector ======
+<!-- targests all instances of a specific HTML elements. -->
+
+<h2>element selectors .</h2>
+<h3>doesn't change </h3>
+<h2>change again why it styling using css h2</h2>
+
+====== 02. class selector =======
+<!-- create class element and set it value to text and text set like element  selector / . use to set class selector -->
+
+ <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, dicta!</p>
+<h3 class="text">element eka adala na class ek tye nm apply wenw.</h3>
+
+====== 03. ID selector ==========
+<!-- targets a specific element with a unique id ,unlike classes id shoud be un -->
+<p id="main-paragraph">Lorem ipsum dolor sit amet consectetur
+     adipisicing elit. Optio quasi ratione dolores
+    veritatis sapiente! Nostrum sapiente odit atque repellat dignissimos.</p>
+
+======= 04. attribute selector =======
+
+<br/>
+<a href="https://www.google.com" target="_blank">Google</a>
+<br/>
+
+====== 05. descendant selector(space) -=========
+<!-- space have div and p element  -->
+
+<div>
+    <p> Numbers </p>
+    <p>one</p>
+    <p>two</p>
+</div>
+
+
+  ====== 06.child selector (>) ======
+
+  <ul>
+    <li>java</li>
+    <li>python</li>
+    <li>html</li>
+  </ul>
+
+
+  ===== 07. adjacent sibling selector (+)=======
+
+  <h2>adjaent</h2>
+  <p>hello one</p>
+  <p>hello two</p>
+
+  ===== 08. general sibling selector (~)=======
+
+  <h1>main heading</h1>
+  <p>Lorem ipsum dolor sit amet.</p>
+  <p>Lorem ipsum dolor sit amet.</p>
+
+  <div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+
+    </p>
+  </div>
+
+  ==== 09. pseudo - class selector ========
+
+  <ul>
+    <li>one </li>
+    <li>two</li>
+    <li>three</li>
+    <li>four </li>
+  </ul>
+
+  <p>hover</p>
+
+  ====== 10. pseudo elements selector ========
+
+  <p>Lorem ipsum dolor
+     sit amet consectetur adipisicing elit. Aspernatur commodi error itaque?</p>
+
+
+=========11. grouping selector ========
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>hEADING 3</h3>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css specificity</title>
+    <style>
+        p{
+            background-color: darkgray;
+        }
+
+        .content{
+              background-color: deepskyblue;
+        }
+
+        #main-content{
+            background-color: cornsilk;
+        }
+
+        div p {
+            background-color: rgb(184, 11, 11);
+        }
+
+        div .content{
+            background-color: rgb(0, 26, 255);
+        }
+
+        div #main-content{
+            background-color: green;
+        }
+
+        #card #main-content{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>css specificity</h1>
+    <div class="card-container"  id="card">
+        <p class="content" id="main-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Ut quisquam quasi velit et eveniet saepe voluptas
+            explicabo in natus animi dolore, earum qui culpa odio perferendis 
+            libero. Facilis incidunt beatae porro omnis, repellendus tempore magni
+            natus minus impedit nostrum fugiat ut, reprehenderit, cumque eveniet 
+            aspernatur nihil vel corporis laborum! Doloremque.
+
+        </p>
+    </div>
+</body>
+</html>

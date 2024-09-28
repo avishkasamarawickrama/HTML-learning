@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student form</title>
+</head>
+<body>
+    <h1>Student Form</h1>
+    <form action="/index.html">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name"> Name :</label>
+        <input type="text">
+        <br>
+        <label for="email"> Email :</label>
+        <input type="email">
+        <br>
+        <label for="phone"> Phone :</label>
+        <input type="number">
+        <br>
+        <label for="male">male</label>
+        <input type="radio" name="gender" >
+        <label for="female">female</label>
+        <input type="radio" name="gender">
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Preferences</legend>
+        <label for="subscribe to newsletter:">subscribe to newletter</label>
+        <input type="checkbox" name="subscribe to newletter" >
+        <label for="choose language :">choose language :</label>
+        <select name="lang" id="lang">
+
+            <option value="sinhala">sinhala</option>
+            <option value="english">english</option>
+            <option value="korean">korean</option>
+            <option value="tamil">tamil</option>
+        </select>
+<br>
+        <textarea name="msg" id="msg" ></textarea>
+    </fieldset>
+
+    <button type="submit">submit</button>
+    </form>
+</body>
+</html>
