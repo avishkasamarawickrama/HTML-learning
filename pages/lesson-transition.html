@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        button{
+            border: 1px solid black;
+            transition: 0.5s;
+            border-radius: 20px;
+        }
+
+        button:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+
+            transition-property: background-color;
+            transition-duration: 4s;
+            transition-timing-function: ease-in;
+            /* transition-delay: 2s; */
+        }
+
+        .img-container{
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+        }
+
+        img{
+            width: 100%;
+            transition: transform 2s ease-in-out 1s;
+        }
+
+         .img-container:hover img{
+           transform: scale(1.2) rotate(360deg);
+            
+           
+        }
+
+        .circle{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: darkmagenta;
+            transition: transform 2s ease-in-out 1s;
+        }
+
+        .circle:hover{
+            transform: translateX(150px);
+        }
+    </style>
+</head>
+<body>
+    <button>Add to cart</button>
+    <br>
+    =====================================================================
+    <br>
+
+    <div class="img-container">
+        <img src="/images/akbar.jpg" alt="">
+    </div>
+<br>
+=====================================================================
+<br>
+    <div class="circle">
+
+    </div>
+</body>
+</html>
